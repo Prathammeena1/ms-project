@@ -20,7 +20,7 @@ const AnimatedBox = ({ onHover, onUnhover, scale = 1 }) => {
   const handleHover = () => {
     if (boxRef.current) {
       gsap.to(boxRef.current.rotation, {
-        x: 1,
+        x: .8,
         duration: 0.5,
         ease: "power2.out",
       });
@@ -69,14 +69,14 @@ const DynamicLighting = ({ isHovered }) => {
   React.useEffect(() => {
     if (lightRef.current) {
       gsap.to(lightRef.current, {
-        intensity: isHovered ? 3 : 1,
+        intensity: isHovered ? 2 : 1,
         duration: 0.3,
         ease: "power2.out",
       });
     }
   }, [isHovered]);
 
-  return <ambientLight ref={lightRef} intensity={1.5} />;
+  return <ambientLight ref={lightRef} intensity={1} />;
 };
 
 // Main Scene Component
