@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Custom CSS Variables */
+:root {
+  --bg: #242424;
+  --bg-primary: #242424;
+  --bg-secondary: #1a1a1a;
+  --bg-accent: #2a2a2a;
+  --bg-dark: #181818;
+  --bg-light: #303030;
+}
+
+/* Custom Utility Classes */
+.bg-custom { background-color: var(--bg); }
+.bg-custom-primary { background-color: var(--bg-primary); }
+.bg-custom-secondary { background-color: var(--bg-secondary); }
+.bg-custom-accent { background-color: var(--bg-accent); }
+.bg-custom-dark { background-color: var(--bg-dark); }
+.bg-custom-light { background-color: var(--bg-light); }
+
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/font/Audiowide-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/font/Gilroy-Regular.ttf') format('truetype');
+}
+
+.font-audiowide {
+  font-family: 'Audiowide', sans-serif;
+}
+
+.font-gilroy {
+  font-family: 'Gilroy', sans-serif;
+}
+
+*{
+  font-family: "Gilroy", sans-serif;
+}
+
+/* Disable text selection and user interactions */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Re-enable selection for input fields if needed */
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* 3D Flip Card Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card {
+  transition: transform 0.3s ease;
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
