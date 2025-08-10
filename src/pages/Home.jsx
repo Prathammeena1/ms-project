@@ -2,6 +2,10 @@ import React from "react";
 import HomeLanding from "../sections/HomeLanding";
 import HomeCaseStudy from "../sections/HomeCaseStudy";
 import HomeService from "../sections/HomeService";
+import HomeIntroText from "../sections/HomeIntroText";
+import HomeFeaturedWork from "../sections/HomeFeaturedWork";
+import HomeTestimonial from "../sections/HomeTestimonial";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -9,6 +13,12 @@ const Home = () => {
       <HomeLanding />
       <HomeCaseStudy />
       <HomeService />
+      <HomeIntroText />
+      <HomeFeaturedWork />
+
+      <HomeTestimonial />
+
+      <Footer />
     </div>
   );
 };

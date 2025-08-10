@@ -69,7 +69,7 @@ const DynamicLighting = ({ isHovered }) => {
   React.useEffect(() => {
     if (lightRef.current) {
       gsap.to(lightRef.current, {
-        intensity: isHovered ? 2 : 1,
+        intensity: isHovered ? 3 : 1,
         duration: 0.3,
         ease: "power2.out",
       });
