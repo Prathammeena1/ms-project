@@ -28,7 +28,7 @@ const HomeFeaturedWork = () => {
       scrollTrigger: {
         trigger: ".feature-card-parent",
         start: "top -2%%",
-        end: "top -300%",
+        end: "top -200%",
         scrub: true,
       },
     });
@@ -80,7 +80,7 @@ const HomeFeaturedWork = () => {
         </div>
       </div>
 
-      <div className="feature-card-parent h-[400vh] w-full">
+      <div className="feature-card-parent h-[300vh] w-full">
         <div className="h-screen w-full sticky top-0 overflow-hidden ">
           <div className="feature-card h-[70%] w-[80%] overflow-hidden absolute top-[56%] scale-[.92] left-1/2 -translate-1/2 rounded-xl">
             <img
