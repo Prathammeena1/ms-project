@@ -20,9 +20,9 @@ const AnimatedBox = ({ onHover, onUnhover, scale = 1 }) => {
   const handleHover = () => {
     if (boxRef.current) {
       gsap.to(boxRef.current.rotation, {
-        x: .8,
-        duration: 0.5,
-        ease: "power2.out",
+        x: 1.6,
+        duration: 0.8,
+        ease: "power4.inOut",
       });
     }
     onHover(); // Call parent hover handler
@@ -33,8 +33,8 @@ const AnimatedBox = ({ onHover, onUnhover, scale = 1 }) => {
       gsap.to(boxRef.current.rotation, {
         x: 0,
         y: 0,
-        duration: 0.5,
-        ease: "power2.out",
+        duration: 0.8,
+        ease: "power4.inOut",
       });
     }
     onUnhover(); // Call parent unhover handler
